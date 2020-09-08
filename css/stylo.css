@@ -1,0 +1,342 @@
+body{
+    font-family: arial;
+    font-size: 20px;
+    background-color: #eee;
+    width: 100%;
+} 
+
+/*class*/
+img.img-icon{
+    height: 27px;
+    width: 27px;
+}
+
+a.act {
+    text-decoration: none;
+    color: blue;
+}   
+
+textarea{
+    outline: none;
+    resize: none;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    box-sizing:border-box;
+    padding: 10px 10px;
+
+}
+
+/*jsus la vamos nos -- inicio do css do feed --*/
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.main-initial-box{ 
+    height: 80px;
+    width: 100%;
+    border-radius:20px;
+    display:flex;
+    justify-content: start;
+    text-align : center;
+    box-sizing: border-box;
+
+}
+
+.main-foto-holder{
+    color: #eee;
+    width: 77px;
+    height: 77px;
+    border-radius: 100%;
+    background: #eee;
+}
+
+.main-description-box{
+    margin-left: 10px;
+    height: 77px;
+    width: 90%;
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+.comment{
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: clip;
+
+}
+
+.main-coment-box{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing:border-box;
+    padding: 10px 10px;
+    border-radius: 20px;
+   
+}
+
+.main-img-holder{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #eee;
+}
+
+.main-interactions-box{
+    width: 100%;;
+    box-sizing: border-box;
+}
+
+.icons-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*-- fim do css feed --*/
+/*-- inicio do css do contact box--*/
+.contacts-box{
+    padding: 5px 5px;
+    box-sizing: border-box;
+
+}
+.user-box{
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+    height: 64px;
+}
+.user-img{
+    border: 1px solid black;
+    border-radius: 100%;
+    height: 64px;
+    width: 64px ;
+    background-color: gray;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.user-info{
+    border: solid 1px black;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+.user-msg{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*-- fim do contact box--*/
+
+/*-- inicio do modal--*/
+.modal-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s, ;
+}
+
+.modal-bg-active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    position: relative;
+    width: 50%;
+    height: 70%;
+    box-sizing: border-box;
+    flex-flow: column;
+    padding: 1em 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #eee;
+    border-radius: 20px;;
+}
+
+.modal-close{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+
+}
+
+.bt-modal{
+    outline: none;
+    font-size: 20px;
+    background-color: none;
+    border: blue 5px solid;
+    border-radius: 20px;
+    padding: 0.5em 2em;
+    cursor: pointer;
+}
+.outline{
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%
+}
+
+.search-input{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.search-input:hover{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+
+/*Id*/
+
+#content{
+    margin: 0;
+    display: flex;
+
+}
+/*coluna 1*/
+
+#colunm-1{
+    margin: 10px 15px;
+    background-color: none;
+    border-radius: 20px;
+    border: solid 1px black;
+    width: 25%;
+    box-sizing: border-box;
+    
+}
+
+#logo-box{
+    margin: auto;
+    border: solid 1px black;
+    background-color: white;
+    height: 70px;
+    border-radius: 20px;
+    display: flex;
+    float: top;
+    padding: 5px 5px;
+
+ 
+}
+
+#contacts-box{
+    margin-top: 10px;
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+   
+}
+
+/*coluna 2*/
+
+#colunm-2 
+{
+    margin: 10px 10px;
+    background-color: none;
+    border-radius: 20px;
+    border: solid 1px black;
+    width: 60%;
+    box-sizing: border-box;
+    
+}
+#search-bar{
+    border: solid 1px black;
+    background-color: white;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 5px;
+
+    position: sticky;
+    position: -webkit-sticky; top: 2px;
+    
+
+}
+#main-box{
+    margin-top: 20px;
+    border: solid 1px black;
+    background-color: none;    
+    border-radius: 20px;
+
+}
+
+
+/*coluna 3*/
+
+#colunm-3{
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: none;
+    width: 25%;
+    box-sizing: border-box;
+    
+}
+
+#action-box{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+#trending-box{
+    margin-top: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+
+/* --Resizing --
+
+@media only screen and (max-width: 600px) {
+    div.
+}
+*/

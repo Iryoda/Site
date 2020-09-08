@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Piupiuwer</title>
+    <link rel="stylesheet" href="css/stylo.css">
+
+  </head>
+<body>
+    <main>
+
+      <div id = "content"><!-- Box geral para organizar as colunas!-->
+<!-- Coluna 1-->
+        <div id = "colunm-1">
+          <div id = "logo-box"></div>
+                    
+          <div id = "contacts-box">
+            <a><strong>Contacts</strong></a>
+            <!-- insert pelo JS da parte de contatos!-->
+            <div class = "user-box">
+              <div class = "user-img"><img></img></div>
+              <div class = "user-info">
+                <div class = "username">username</div>
+                <div class = "user-msg">mensagem</div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+<!-- Coluna 2-->
+        <div id = "colunm-2"> <!-- Coluna do feed-->
+            <div id = "search-bar">
+              <input class = "search-input "type="text" name = "search">
+            </div>
+            <!-- Apartir daqui faz o 'insert com JS' e infinity scroll ( masoquismo tentar ler!)-->              
+            <div id = "main-box"></div>
+        </div>
+        
+
+<!-- Coluna 3-->
+        <div id= "colunm-3">
+          <div id = "action-box">
+              <div id ="action-content">
+                <a><strong>Actions</strong></a><br><br>
+                <a id = "NewPost" class = "act" style ="cursor: pointer">+ New post</a>
+              </div>  
+          </div>
+
+          <div id = "trending-box">
+              <a><strong>Trendings</strong></a><br><br>
+              <a class = "act" href="index.html">#pjmelhorej</a><br>
+              <a class = "act" href="index.html">#sensacional</a><br>
+              <a class = "act" href="index.html">#churrosmelhorfruta</a><br>
+          </div>
+        </div>
+      </div>
+  </main>
+  
+  <!-- Box do comentario!-->        
+  <div class="modal-bg">
+    <div class="modal">
+      <label><strong>Comentario</strong></label>
+      <textarea class= "comment-box" style =" height: 70%; width: 100%; "></textarea>
+      <a id = "demo" style="font-size: 15px;">0/140</a>
+      <button class = "bt-modal"> Enviar</button>
+      <span class= "modal-close">X</span>
+    </div>
+  </div>
+
+
+  <script src="js/index.js"></script>
+  <script src="js/posts.js"></script>
+</body>
+</html>

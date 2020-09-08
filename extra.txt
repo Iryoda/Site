@@ -1,0 +1,37 @@
+<div class = "outline-box" style="margin-bottom: 10px;">
+                <div class = "main-initial-box">     <!-- Foto Peril + Username + little Descprition-->     
+                  <div class = "main-foto-holder"></div> <!-- colocar img de pefil aqui!-->     
+                    <div class = "main-description-box">
+                      <div class = "username">nome</div>
+                      <div class = "descprition">user</div>
+                    </div>
+                </div>    
+              
+                <div class ="main-coment-box"> <!-- Boxy com comenta'rio-->
+                  <div class= "comment">comentario</div>
+                </div>
+                <!-- <div class ="main-img-holder"></div> /Image Holder colocar a url aqui da imagem anexada!-->
+                  <div class = "main-interactions-box"> <!-- Icones e o krl-->
+                    <div class = "icons-box">
+                      <div class= "box">
+                        <img id = "love" class= "img-icon" src="img/heart.png" alt = "love" style ="cursor: pointer"><!-- like-->
+                          <div style= "margin-left: 10px">
+                            <a>21</a>
+                          </div>
+                        </div>
+                        <div class= "box">
+                          <img id= "comment-icon" class= "img-icon" src="img/box_comment.png" alt = "comment" style ="cursor: pointer"> <!-- comments-->
+                          <div style= "margin-left: 10px;">
+                            <a>23</a>
+                          </div>
+                        </div>
+                        <div>
+                          <img id= "repiu" class= "img-icon" src="img/rePiu.png" alt = "repiu" style ="cursor: pointer"><!-- repiu-->
+                        </div>
+                        <div>
+                          <img id= "flag" class= "img-icon" src="img/flag.png" alt = "flag" style ="cursor: pointer"><!-- flag! -->
+                        </div>
+                      </div>   
+                    </div>
+                </div> 
+            </div>
