@@ -28,11 +28,26 @@ textarea{
 }
 
 /*jsus la vamos nos -- inicio do css do feed --*/
+
+.outline{
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+}
+
 .box{
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+
+}
+
+.box img{
+    height: 28px;
 
 }
 .main-initial-box{ 
@@ -52,6 +67,8 @@ textarea{
     height: 77px;
     border-radius: 100%;
     background: #eee;
+    overflow: hidden;
+
 }
 
 .main-description-box{
@@ -60,6 +77,8 @@ textarea{
     width: 90%;
     background-color: #eee;
     border-radius: 20px;
+    box-sizing: border-box;
+    padding: 2%;
 }
 
 .comment{
@@ -192,32 +211,27 @@ textarea{
     padding: 0.5em 2em;
     cursor: pointer;
 }
-.outline{
-    width: 100%;
-    border-radius: 20px;
-    background-color: white;
-    padding: 10px 10px;
-    box-sizing: border-box;
-    margin-bottom: 5%
-}
-
+/*-- Fim do modal--*/
 .search-input{
     width: 80%;
     border: none;
     outline: none;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .search-input:hover{
-    width: 80%;
-    border: none;
-    outline: none;
-    font-size: 15px;
     border-bottom: 1px solid black;
+}
+.hidden{
+    display: none;
+    opacity: 0%;
+}
+
+.marcador{
+    border: 1px solid black;
 }
 
 /*Id*/
-
 #content{
     margin: 0;
     display: flex;
@@ -268,34 +282,43 @@ textarea{
     margin: 10px 10px;
     background-color: none;
     border-radius: 20px;
-    border: solid 1px black;
     width: 60%;
     box-sizing: border-box;
     
 }
 #search-bar{
-    border: solid 1px black;
     background-color: white;
     height: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
     padding: 5px 5px;
 
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     position: sticky;
     position: -webkit-sticky; top: 2px;
     
 
 }
 #main-box{
-    margin-top: 20px;
-    border: solid 1px black;
     background-color: none;    
     border-radius: 20px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
+#top-feed{
+    margin-top: 20px;
+    width: 100%;    
+    background-color: none;    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; 
+}
 
 /*coluna 3*/
 
@@ -303,7 +326,6 @@ textarea{
     margin: 10px 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-radius: 20px;
     background-color: none;
     width: 25%;

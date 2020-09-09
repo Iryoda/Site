@@ -16,6 +16,7 @@
           <div id = "logo-box"></div>
                     
           <div id = "contacts-box">
+
             <a><strong>Contacts</strong></a>
             <!-- insert pelo JS da parte de contatos!-->
             <div class = "user-box">
@@ -31,10 +32,14 @@
 <!-- Coluna 2-->
         <div id = "colunm-2"> <!-- Coluna do feed-->
             <div id = "search-bar">
-              <input class = "search-input "type="text" name = "search">
+              <img src = "img/search.png" alt = "search-icon" height="90%" style="opacity: 50%;">
+              <input class = "search-input" id="search-id" type="text" name="search" placeholder="Search for people">
             </div>
-            <!-- Apartir daqui faz o 'insert com JS' e infinity scroll ( masoquismo tentar ler!)-->              
-            <div id = "main-box"></div>
+            <!-- Apartir daqui faz o 'insert com JS' (masoquismo tentar ler!)-->
+            <div id ="top-feed"></div>                
+            <div id = "main-box">
+             
+            </div>
         </div>
         
 
@@ -60,7 +65,7 @@
   <!-- Box do comentario!-->        
   <div class="modal-bg">
     <div class="modal">
-      <label><strong>Comentario</strong></label>
+      <label><strong>Comentários</strong></label>
       <textarea class= "comment-box" style =" height: 70%; width: 100%; "></textarea>
       <a id = "demo" style="font-size: 15px;">0/140</a>
       <button class = "bt-modal"> Enviar</button>
@@ -69,6 +74,7 @@
   </div>
 
 
+  <script src="js/like.js"></script>
   <script src="js/index.js"></script>
   <script src="js/posts.js"></script>
 </body>
