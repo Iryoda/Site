@@ -13,21 +13,25 @@
       <div id = "content"><!-- Box geral para organizar as colunas!-->
 <!-- Coluna 1-->
         <div id = "colunm-1">
-          <div id = "logo-box"></div>
-                    
-          <div id = "contacts-box">
-
-            <a><strong>Contacts</strong></a>
-            <!-- insert pelo JS da parte de contatos!-->
-            <div class = "user-box">
-              <div class = "user-img"><img></img></div>
-              <div class = "user-info">
-                <div class = "username">username</div>
-                <div class = "user-msg">mensagem</div>
-              </div>
+          <div id = "logo-box">
+            <div id = "structure">
+              <div id = "logo"><strong>piupiuwer.</strong></div>
+              <div class = "down"><img class="hamb-icon" style ="cursor: pointer" src= "img/icon.png" height = 30px></div>
             </div>
+
+            <ul class = "menu-list">
+              <li class= "list-item"><a class="act" href="index.html">#Home</a></li> 
+              <li class= "list-item"><a class="act" href="index.html">#Trendings</a></li>
+              <li class= "list-item"><a class="act" href="index.html">#Contacts</a></li><br>
+              <li id = "newpost" class= "list-item" style ="cursor: pointer"><a class="act">+ New Post</a></li>
+            </ul>
           </div>
           
+          <div id = "contacts-box"> 
+            <a><strong>Contacts</strong></a><br>
+            <div id = "insert-contact-box"></div>
+            <!-- insert pelo JS da parte de contatos!-->
+            </div>
         </div>
 <!-- Coluna 2-->
         <div id = "colunm-2"> <!-- Coluna do feed-->
@@ -54,27 +58,28 @@
 
           <div id = "trending-box">
               <a><strong>Trendings</strong></a><br><br>
-              <a class = "act" href="index.html">#pjmelhorej</a><br>
-              <a class = "act" href="index.html">#sensacional</a><br>
-              <a class = "act" href="index.html">#churrosmelhorfruta</a><br>
+              <a class = "act" href="index.html">#pjmelhorej</a><br><br>
+              <a class = "act" href="index.html">#sensacional</a><br><br>
+              <a class = "act" href="index.html">#churrosmelhorfruta</a><br><br>
           </div>
         </div>
       </div>
   </main>
   
+  <footer>Os direitos de desse site são de Augusto Iryoda. @Polijunior
+  </footer>
   <!-- Box do comentario!-->        
   <div class="modal-bg">
     <div class="modal">
       <label><strong>Comentários</strong></label>
-      <textarea class= "comment-box" style =" height: 70%; width: 100%; "></textarea>
-      <a id = "demo" style="font-size: 15px;">0/140</a>
+      <textarea class= "comment-box" style =" height: 50%; width: 100%; font-family: Arial, Helvetica, sans-serif;"></textarea>
+      <div class = "status" style="font-size: 15px;">0/140</div>
       <button class = "bt-modal"> Enviar</button>
       <span class= "modal-close">X</span>
     </div>
   </div>
 
-
-  <script src="js/like.js"></script>
+  <script src="js/like_Pin.js"></script>
   <script src="js/index.js"></script>
   <script src="js/posts.js"></script>
 </body>

@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+footer{
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    color: grey;
+}
 body{
     font-family: arial;
     font-size: 20px;
@@ -13,7 +21,7 @@ img.img-icon{
 
 a.act {
     text-decoration: none;
-    color: blue;
+    color: #00d1ff;
 }   
 
 textarea{
@@ -24,6 +32,24 @@ textarea{
     text-decoration: none;
     box-sizing:border-box;
     padding: 10px 10px;
+
+}
+
+/*Menu lateral*/
+.menu-list{
+    padding: 0;
+    align-items: rights;
+    transition: display 0.5s, opacity 0.5s;
+    list-style-position: outside;
+    list-style: none;
+    
+}
+.list-item{
+
+    color: black;
+    font-size: 20px;
+    position: relative;
+    right: 0;
 
 }
 
@@ -79,12 +105,24 @@ textarea{
     border-radius: 20px;
     box-sizing: border-box;
     padding: 2%;
-}
 
-.comment{
-    text-align: justify;
-    overflow: hidden;
-    text-overflow: clip;
+}
+.username{
+    width: 100%;
+    text-align: left;
+
+
+}
+.descprition{
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    background-image: linear-gradient(
+        #00d1ff,
+        blue
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 
 }
 
@@ -97,6 +135,13 @@ textarea{
     border-radius: 20px;
    
 }
+.comment{
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: clip;
+
+}
+
 
 .main-img-holder{
     width: 100%;
@@ -119,40 +164,43 @@ textarea{
 
 /*-- fim do css feed --*/
 /*-- inicio do css do contact box--*/
-.contacts-box{
-    padding: 5px 5px;
-    box-sizing: border-box;
-
-}
 .user-box{
     display: flex;
-    border-radius: 20px;
+    justify-content: space-between;
     width: 100%;
     height: 64px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
 .user-img{
-    border: 1px solid black;
-    border-radius: 100%;
     height: 64px;
     width: 64px ;
-    background-color: gray;
-    display: flex;
-    text-align: center;
-    align-items: center;
+    background-color: #eee;
+    border-radius: 100%;
+    overflow: hidden;
 }
+
 .user-info{
-    border: solid 1px black;
+    margin-left: 10%;
+    box-sizing: border-box;
+    padding: 2%;
     width: 70%;
     overflow: hidden;
     text-overflow: ellipsis;
 
-
 }
-
+.user-name{
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .user-msg{
-    display: flex;
+    color: grey;
     align-items: center;
     font-size: 15px;
+    height:30%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -181,8 +229,8 @@ textarea{
 
 .modal{
     position: relative;
-    width: 50%;
-    height: 70%;
+    width: 40%;
+    height: 75%;
     box-sizing: border-box;
     flex-flow: column;
     padding: 1em 1em;
@@ -203,17 +251,24 @@ textarea{
 }
 
 .bt-modal{
+    position:absolute;
+    bottom: 1em;
+    right: 1em;
     outline: none;
     font-size: 20px;
     background-color: none;
-    border: blue 5px solid;
+    border: #00d1ff 2px solid;
     border-radius: 20px;
-    padding: 0.5em 2em;
+    padding: 0.5em 0.5em;
     cursor: pointer;
+}
+
+.status{
+    width: 70%;
 }
 /*-- Fim do modal--*/
 .search-input{
-    width: 80%;
+    width: 90%;
     border: none;
     outline: none;
     font-size: 20px;
@@ -222,14 +277,16 @@ textarea{
 .search-input:hover{
     border-bottom: 1px solid black;
 }
-.hidden{
+
+.Chidden{
     display: none;
     opacity: 0%;
 }
-
-.marcador{
-    border: 1px solid black;
+.Cshow{
+    display: all;
+    opacity: 100%;
 }
+
 
 /*Id*/
 #content{
@@ -243,38 +300,64 @@ textarea{
     margin: 10px 15px;
     background-color: none;
     border-radius: 20px;
-    border: solid 1px black;
     width: 25%;
     box-sizing: border-box;
+    overflow: hidden;
+    
     
 }
-
+#structure{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #logo-box{
     margin: auto;
-    border: solid 1px black;
     background-color: white;
-    height: 70px;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     float: top;
-    padding: 5px 5px;
-
+    padding: 0.7em 0.7em;
+    box-sizing: border-box;
  
 }
 
 #contacts-box{
+    box-sizing:border-box;
+    width: 100%; 
     margin-top: 10px;
-    border: solid 1px black;
     background-color: white;
     border-radius: 20px;
     padding: 10px 10px;
     display: flex;
+    height: 400px;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;    
+}
+#logo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
 
-   
+    background-image: linear-gradient(
+        #00d1ff,
+        #ff00c7
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}   
+
+#insert-contact-box{
+    width: 100%;
+    border-radius: 20px;
+    box-sizing:border-box;
+    flex-flow: column;
+    overflow: scroll;
 }
 
+#insert-contact-box::-webkit-scrollbar{
+    display: none;
+}
 /*coluna 2*/
 
 #colunm-2 
@@ -356,9 +439,54 @@ textarea{
 }
 
 
-/* --Resizing --
+/* --Resizing --*/
 
 @media only screen and (max-width: 600px) {
-    div.
+    #colunm-3{
+        display: none;
+    }
+
+    #contacts-box{
+        display: none;
+    }
+    #logo-box{
+        justify-content: center;
+        align-items: center;
+    }   
+    .modal{
+        position: relative;
+        width: 60%;
+        height: 85%;
+        box-sizing: border-box;
+        flex-flow: column;
+        padding: 1em 1em;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: #eee;
+        border-radius: 20px;;
+    }
+    #logo{
+        display: none;
+    }
+    #coluna-2{
+         margin: 10px 5px;
+     }
+     #coluna-1{
+        margin: 10px 5px;
+    }
 }
-*/
+
+@media only screen and (max-width: 1024px) {
+    #colunm-3{
+        display: none;
+    }
+    .main-description-box{
+        width: 70%;
+    }
+    .main-img-holder{
+        width: 77px;
+        height:68px;
+    }
+}
